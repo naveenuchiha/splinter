@@ -41,7 +41,7 @@ def wait_until_start():
         try:
             results = urlopen(EXAMPLE_APP)
             if results.code == 404:
-                raise Exception("%s returned unexpected 404" % EXAMPLE_APP)
+                raise Exception("%s returned unexpected 404" % EXAMPLE_APP)//hi
             break
         except IOError:
             pass
